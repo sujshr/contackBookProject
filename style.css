@@ -1,54 +1,100 @@
-#btnGet{
-    margin-top: 40px;
-    margin-bottom: 10px;
-    margin-left: 47%;
-    background-color: white;
+body {
+    background-color: rgb(27, 24, 24);
+    color: aliceblue;
+}
+
+#btnGet {
+    background-color: rgb(255, 162, 55);
     border: 1px solid rgb(231, 126, 5);
     border-radius: 5px;
-    padding:10px;
+    padding: 10px;
+    font-size: 1.5rem;
     font-weight: bold;
-  }
-  #btnGet:hover{
-      transform: scale(1.15);
-      box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-      border: 1px solid rgb(231, 126, 5);
-      background-color: rgb(241, 123, 12);
-      color: rgb(246, 248, 247);
-      transition: .5s;
-      cursor: pointer;
-     
-    }
-  #message {
-      display: grid;
-      grid-template-columns:33% 33% 33%;
-      grid-column-gap: 1em;
-  }
-  .player {
-      position: relative;
-      border-radius: 5px;
-      box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
-      margin-top: 20%;
-      margin-left:5% ;
-      padding: 10%;
-      text-align: left;
-      width: 50%;
-  }
-  h1{
-      text-align: center;
-  }
-  h2{
-      position: absolute;
-  }
-  
-  .player>.strength {
-      font-size: 20px;
-      font-weight: bold;
-  
-      
-  }
-  .player:hover{
-      transform: scale(1.15);
-      box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-      background-color: rgb(241, 123, 12);
-  
-  }
+    transition: all 0.5s;
+    margin-bottom: 2rem;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contactBook {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+
+.contact {
+    background-color: #5a5a5a;
+    width: 300px;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px aliceblue;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact:hover {
+    transform: scale(1.05);
+    background-color: #363636;
+    ;
+}
+
+.lable {
+    font-weight: 700;
+    color: rgb(207, 252, 255);
+}
+
+#btnGet:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgb(231, 126, 5);
+    background-color: rgb(241, 123, 12);
+    color: rgb(105, 105, 105);
+    transition: .5s;
+    cursor: pointer;
+}
+
+#message {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1em;
+}
+
+.player {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 20%;
+    margin-left: 5%;
+    padding: 10%;
+    text-align: left;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    position: absolute;
+}
+
+.player>.strength {
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+.player:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    background-color: rgb(241, 123, 12);
+}
