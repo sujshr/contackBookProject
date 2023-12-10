@@ -1,2 +1,2 @@
 ##Deployed link:
-sujal-shresth.github.io/contackBookProject
+[Visit the deployed project](https://sujal-shresth.github.io/contackBookProject)
