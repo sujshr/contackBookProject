@@ -1,5 +1,6 @@
 // create a function and following the progressions inside the function.
 
+function loadData(){
 // Progression 1: Create a promise call which fetches data
 let get_contacts = fetch("https://jsonplaceholder.typicode.com/users");
 get_contacts.then((response) => {
@@ -34,3 +35,4 @@ const handleError = (error) => {
     console.log('Promise rejected.');
     console.log(error.message);
 };
+}
